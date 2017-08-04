@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>视频播放</title>
+</head>
+<body>
+<video src="video.mp4" height="400px" preload="metadata" poster="a.jpg" controls>
+    <source src="video.mp4" type="video/mp4"/>
+    <source src="video.ogv" type="video/ogg"/>
+    <!--当浏览器不支持mp4格式时，会自动查找下一个source包含的视频进行播放，解决兼容性问题-->
+</video>
+<!--autoplay:自动播放
+    controls:显示播放控件（进度条、音量等等）
+    preload:metadata：video元素加载完成后视频只显示第一帧（none:不载入视频；auto：载入整个视频，默认值）
+    poster:video加载完成后视频预先载入的图片；
+-->
+</body>
+</html>
